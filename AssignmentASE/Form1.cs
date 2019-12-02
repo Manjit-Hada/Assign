@@ -60,5 +60,49 @@ namespace AssignmentASE
                 }
             }
         }
+
+        private async void saveToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog sfd = new SaveFileDialog();//creating a instance of a dialog box
+            sfd.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*"; //creting text form
+            sfd.RestoreDirectory = true;
+
+            if (sfd.ShowDialog() == DialogResult.OK)//if choose data is fine then enter todialog box
+            {
+                try
+                {
+
+                    using (StreamWriter write = new StreamWriter(sfd.FileName)) //dispose is done automatically
+                    {
+                        await write.WriteLineAsync(textBox_multiline.Text);//loading text file in multipleLine
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: Could not read file from disk. Original error: " + ex.Message);
+                }
+            }
+        }
+
+        private void btn_execute_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox_console_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("");
+        }
     }
 }
