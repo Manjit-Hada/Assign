@@ -24,7 +24,7 @@ namespace AssignmentASE
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-
+            btnSingle_run.clear();
         }
 
         private void btn_refresh_Click(object sender, EventArgs e)
