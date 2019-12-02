@@ -34,7 +34,7 @@ namespace AssignmentASE
 
         private void loadToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            btnSingle_run.Clear();
+            
         }
     }
 }
