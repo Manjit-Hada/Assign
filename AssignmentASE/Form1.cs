@@ -106,6 +106,7 @@ namespace AssignmentASE
             this.movePointer = false;
             this.textBox_multiline.Clear();
             panel_drawing.Refresh();
+            textBox_single.Clear();
             StreamReader s = File.OpenText("D:\\Manjit\\TBC\\ASE\\AssignmentASE\\move.txt");
             do
             {
