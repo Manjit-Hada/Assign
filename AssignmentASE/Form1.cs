@@ -11,7 +11,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace AssignmentASE
-{
+{   /// <summary>
+/// this is the home class which extends form . this class is shown when the app runs
+/// </summary>
     public partial class Form1 : Form
     {
         Shape shape1, shape2; //declaration of shapeFactory
@@ -66,7 +68,11 @@ namespace AssignmentASE
         {
   
         }
-
+        /// <summary>
+        /// this method clear the panel and the text box
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btn_refresh_Click(object sender, EventArgs e)
         {
             panel_drawing.Invalidate();
@@ -82,7 +88,11 @@ namespace AssignmentASE
             this.drawRect = false;
             this.movePointer = false;
         }
-
+        /// <summary>
+        /// this method reset the input taken and the panel and sets cursor to 0,0
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btn_reset_Click(object sender, EventArgs e)
         {
             circleObjects.Clear();
@@ -110,7 +120,12 @@ namespace AssignmentASE
 
 
         }
-
+        /// <summary>
+        /// this is panel which checks the conditions for each line
+        /// it also sends PaintEventArgs to shape classes to draw shapes
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void panel_drawing_Paint(object sender, PaintEventArgs e)
         {
             //Graphics to draw in panel
@@ -172,7 +187,11 @@ namespace AssignmentASE
             }
             textBox_console.Text = console_text;
         }
-
+        /// <summary>
+        /// This method runs single line command
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnSingle_run_Click(object sender, EventArgs e)
         {
             try
@@ -499,7 +518,11 @@ namespace AssignmentASE
             textBox_console.Text = console_text;
             panel_drawing.Refresh(); //refresh with every drawing equals to true
         }
-
+        /// <summary>
+        /// this method loads the text file from desired folder and files
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void loadToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Stream myStream = null;//instantiating null value for stra
@@ -527,7 +550,11 @@ namespace AssignmentASE
                 }
             }
         }
-
+        /// <summary>
+        /// thia method saves the text file from desired folder and file
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private async void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SaveFileDialog sfd = new SaveFileDialog();//creating a instance of a dialog box
@@ -551,7 +578,11 @@ namespace AssignmentASE
                 }
             }
         }
-
+        /// <summary>
+        /// this method run the multiline text box
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btn_execute_Click(object sender, EventArgs e)
         {
             try
@@ -883,12 +914,20 @@ namespace AssignmentASE
         {
 
         }
-
+        /// <summary>
+        /// this method exits the program
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
+        /// <summary>
+        /// this method display message box for help
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void helpToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("For drawing without parameter:\n" +

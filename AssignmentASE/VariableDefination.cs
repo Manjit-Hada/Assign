@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 using System.Text.RegularExpressions;
 
 namespace AssignmentASE
-{
+{    /// <summary>
+     /// Defination Variables
+    /// </summary>
     public class VariableDefination
     {
         /// <summary>

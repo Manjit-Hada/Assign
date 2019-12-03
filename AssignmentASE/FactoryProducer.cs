@@ -5,7 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace AssignmentASE
-{
+{       /// <summary>
+       /// this class checks the condition of shape
+      /// </summary>
     class FactoryProducer
     {
         /// <summary>

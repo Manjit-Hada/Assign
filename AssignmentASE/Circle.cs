@@ -5,7 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Drawing;
 namespace AssignmentASE
-{
+{  
+     /// <summary>
+     /// this is class to make circle in graphics
+     /// this class inherit shape class
+     /// </summary>
     public class Circle : Shape
     {
         int radius;//declaration of the radius

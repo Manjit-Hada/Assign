@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 using System.Drawing;
 
 namespace AssignmentASE
-{
+{    /// <summary>
+/// this is abstract class
+/// its base class for other ie circle ,rectangle,polygon,etc
+/// this class alo have pan decleratiion that can be inherited in other shape classes
+/// </summary>
     public abstract class Shape
     {
         //variable declaration and initialization

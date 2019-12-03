@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 using System.Drawing;
 
 namespace AssignmentASE
-{
+{      /// <summary>
+      /// this is class to make rectangle in graphics
+      /// this class is inherits shape class
+     /// </summary>
     public class Rectangle : Shape
     {
         //declaration of variables

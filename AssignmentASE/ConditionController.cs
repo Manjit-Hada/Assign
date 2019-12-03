@@ -5,7 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace AssignmentASE
-{
+{     /// <summary>
+     /// checks the input 
+     /// </summary>
     class ConditionController
     {
         //declaration

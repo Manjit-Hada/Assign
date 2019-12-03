@@ -5,13 +5,18 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace AssignmentASE
-{
+{    /// <summary>
+     /// Vairables
+     /// </summary>
     public class Variables
     {
         /// <summary>
         /// settter and getter
         /// </summary>
         public string variable { get; set; }
+        /// <summary>
+        /// float value
+        /// </summary>
         public float value { get; set; }
 
 

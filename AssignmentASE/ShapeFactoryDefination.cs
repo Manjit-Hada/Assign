@@ -5,7 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace AssignmentASE
-{
+{     /// <summary>
+      /// Defining shape fasctory
+      /// </summary>
     public class ShapeFactoryDefination
     {
         /// <summary>
@@ -36,7 +38,11 @@ namespace AssignmentASE
             }
             return false;
         }
-
+        /// <summary>
+        /// mwthod to check  triangle shape
+        /// </summary>
+        /// <param name="shape"></param>
+        /// <returns></returns>
         public bool isTriangle(string shape)
         {
             if (shape == "Triangle")

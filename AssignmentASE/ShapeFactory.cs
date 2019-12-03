@@ -5,7 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace AssignmentASE
-{
+{     /// <summary>
+     /// this class inherits abstract factory
+     /// </summary>
     public class ShapeFactory : AbstractFactory
     {
         /// <summary>
