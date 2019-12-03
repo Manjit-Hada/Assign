@@ -1,10 +1,11 @@
 ﻿using System;
+using AssignmentASE;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace UnitTestProject1
+namespace UnitTestAssignment
 {
     [TestClass]
-    public class FactoryDefinitionTest
+    public class FactoryDefinationTest
     {
         [TestMethod]
         public void isShape()
