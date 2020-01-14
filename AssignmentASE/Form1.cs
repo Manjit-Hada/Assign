@@ -83,7 +83,9 @@ namespace AssignmentASE
             rectangleObjects.Clear();
             variableObjects.Clear();
             polygonObjects.Clear();
+            
             lineObjects.Clear();
+
             this.drawCircle = false;
             this.drawRect = false;
             this.movePointer = false;
@@ -100,11 +102,13 @@ namespace AssignmentASE
             moveObjects.Clear();
             variableObjects.Clear();
             polygonObjects.Clear();
+
             lineObjects.Clear();
             this.drawCircle = false;
             this.drawRect = false;
             this.movePointer = false;
             this.textBox_multiline.Clear();
+            this.drawPolgon = false;
             panel_drawing.Refresh();
             textBox_single.Clear();
             StreamReader s = File.OpenText("D:\\Manjit\\TBC\\ASE\\AssignmentASE\\move.txt");
@@ -386,7 +390,7 @@ namespace AssignmentASE
 
 
 
-                        if (words[1].Contains("Polygon") == true || words[1].Contains("polygon") == true || words[1].Contains("triangle") == true)
+                        if (words[1].Contains("Triangle") == true || words[1].Contains("triangle") == true )
                         {
 
                             drawPolgon = true;
@@ -777,7 +781,7 @@ namespace AssignmentASE
 
 
 
-                        if (words[1].Contains("Polygon") == true || words[1].Contains("polygon") == true)
+                        if (words[1].Contains("Triangle") == true || words[1].Contains("triangle") == true)
                         {
                      
 

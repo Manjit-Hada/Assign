@@ -56,7 +56,7 @@
             // 
             // textBox_single
             // 
-            this.textBox_single.Location = new System.Drawing.Point(501, 44);
+            this.textBox_single.Location = new System.Drawing.Point(489, 45);
             this.textBox_single.Name = "textBox_single";
             this.textBox_single.Size = new System.Drawing.Size(335, 20);
             this.textBox_single.TabIndex = 0;
@@ -117,6 +117,7 @@
             this.textBox_console.Location = new System.Drawing.Point(501, 304);
             this.textBox_console.Multiline = true;
             this.textBox_console.Name = "textBox_console";
+            this.textBox_console.ReadOnly = true;
             this.textBox_console.Size = new System.Drawing.Size(416, 227);
             this.textBox_console.TabIndex = 7;
             this.textBox_console.Text = "Console:";
