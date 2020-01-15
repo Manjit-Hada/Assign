@@ -8,10 +8,7 @@ namespace AssignmentASE
 {
     static class Program
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
-        [STAThread]
+       
         static void Method1()
         {
             Console.WriteLine("Program has just been Executed.");
@@ -21,6 +18,11 @@ namespace AssignmentASE
         {
             Console.WriteLine(fname + " Manjit Hada");
         }
+
+        /// <summary>
+        /// The main entry point for the application.
+        /// </summary>
+        [STAThread]
         static void Main()
         {
             Method2("Program made by");
